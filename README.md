@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+# React Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React project set up using [Vite](https://vitejs.dev/), a modern development environment and build tool for frontend applications.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with the project, you'll need to have [Node.js](https://nodejs.org/) and either [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) installed on your machine.
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+    ```shell
+    git clone https://github.com/Skladkansaeng/edsy-assignments.git
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Navigate to the project directory:**
+
+    ```shell
+    cd edsy-assignments
+    ```
+
+3. **Install the dependencies:**
+
+    Using yarn:
+
+    ```shell
+    yarn install
+    ```
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+- **`dev`:**
+
+    Starts the development server on `http://localhost:5173` by default:
+
+    ```shell
+    yarn dev
+    ```
+
+- **`build`:**
+
+    Builds the project for production in the `dist` directory:
+
+    ```shell
+    yarn build
+    ```
+
+
+## Project Structure
+
+- `src/`: Source files for the application, including components, styles, and assets.
+- `public/`: Static files such as images and other resources.
+- `dist/`: Output directory for production builds.
+- `vite.config.js`: Configuration file for Vite.
+- `package.json`: Project metadata and scripts.
